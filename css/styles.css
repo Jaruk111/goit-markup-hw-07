@@ -202,37 +202,25 @@ img {
 
 
 .hero {
-  background: #2f303a;
+  background-color: #2f303a;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-.hero__overlay{
-  height: 600px;
+
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-  url(../imeges/hero.jpg);
-
+        rgba(47, 48, 58, 0.4)),
+      url(../imeges/hero.jpg);
   
+  
+  
+padding-top: 200px;
+padding-bottom: 200px;}
 
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-}
-
-.hero__container {
-  display: flex;
-  width: 1200px;
-  padding: 200px auto 280px;
-
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
 
 .hero__title {
   margin-left: auto;
@@ -255,9 +243,7 @@ img {
 
 /* hero__button */
 .hero__button {
-  display: flex;
-  align-items: center;
-  
+    
   color: var(--third-text-color);
   background-color: #2196f3;
 
@@ -351,7 +337,7 @@ img {
 }
 
 /* чим ми займаємося */
-.our-classes {
+.our-work {
   padding-top: 0;
 }
 
@@ -363,11 +349,9 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* background-color: var(--primary-background-color); */
 }
 
-.our-classes__overlay{
+.our-work__overlay{
   display: flex;
   position: absolute;
 
@@ -381,7 +365,7 @@ img {
   
 }
 
-.our-classes__text-overlay{
+.our-work__text{
   display: flex;
 
   text-align: center;
@@ -399,13 +383,13 @@ img {
 
 
 
-.our-classes__item{
+.our-work__item{
   width: 370px;
   position: relative;
   direction: none;
 }
 
-.our-classes__list {
+.our-work__list {
   display: flex;
   gap: 30px;
   list-style: none;
