@@ -30,13 +30,15 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+            border-color: var(--accent-text-color);
+        }
+
 }
 
-.partners-link:hover,
-.partners-link:focus {
-    color: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-}
+
 
 .feature-icon {
     fill: currentColor;

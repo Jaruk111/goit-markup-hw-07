@@ -42,6 +42,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+    &:hover,
+    &:focus {
+            border-color: var(--accent-text-color);
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
+
 }
 
 .modal-textarea::placeholder {
@@ -51,12 +58,7 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-textarea:hover,
-.modal-textarea:focus {
-    border-color: var(--accent-text-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
-}
+
 
 .wrapper {
     display: flex;
@@ -71,31 +73,37 @@
     color: #757575;
 
     margin-bottom: 28px;
+
+    &:hover,
+    &:focus {
+    
+            fill: var(--accent-text-color);
+    
+            outline: none;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }
 
-.wrapper:hover,
-.wrapper:focus {
 
-    fill: var(--accent-text-color);
 
-    outline: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-input:focus+.form-icon {
-
-    fill: var(--accent-text-color);
-}
 
 .modal-input {
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:focus {
+            border-color: var(--accent-text-color);
+        }
+
+    &:focus+.form-icon {
+        
+             fill: var(--accent-text-color);
+                }
+
 }
 
-.modal-input:focus {
-    border-color: var(--accent-text-color);
-}
+
 
 .form-icon {
     position: absolute;
@@ -130,25 +138,24 @@
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
     text-decoration: none;
+
+    &::after {
+            content: "";
+            position: absolute;
+    
+            left: 0;
+            bottom: 0;
+    
+            width: 100%;
+            height: 1px;
+    
+            background-color: var(--accent-text-color);
+        }
 }
 
-.deal-link::after {
-    content: "";
-    position: absolute;
 
-    left: 0;
-    bottom: 0;
 
-    width: 100%;
-    height: 1px;
 
-    background-color: var(--accent-text-color);
-}
-
-.form-btn {
-    display: flex;
-    justify-content: center;
-}
 
 .form-checkbox-icon:checked+.modal-form-deal-text .custom-checkbox {
     border-color: transparent;
