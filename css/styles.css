@@ -207,7 +207,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.overlay{
+.hero__overlay{
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -224,7 +224,7 @@ img {
 
 }
 
-.hero-container {
+.hero__container {
   display: flex;
   width: 1200px;
   padding: 200px auto 280px;
@@ -234,7 +234,7 @@ img {
   align-items: center;
 }
 
-.hero-title {
+.hero__title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -253,12 +253,11 @@ img {
   color: var(--third-text-color);
 }
 
-/* main button */
-.main-button {
+/* hero__button */
+.hero__button {
   display: flex;
   align-items: center;
-  text-align: center;
-
+  
   color: var(--third-text-color);
   background-color: #2196f3;
 
@@ -277,8 +276,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-button:hover,
-.main-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--third-text-color);
   background-color: #188ce8;
   }
@@ -297,7 +296,7 @@ img {
   background-color: var(--primary-background-color);
 }
 
-.icon-container{
+.feature__icon-container{
   display: flex;
   background-color: #F5F4FA;
   height: 120px;
@@ -307,7 +306,7 @@ img {
   margin-bottom: 30px;
 }
 
-.feature-list .title {
+.feature__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -330,19 +329,19 @@ img {
   overflow: hidden;
 }
 
-.feature-list.list {
+.feature__list.list {
   display: flex;
 }
 
-.feature-list .item {
+.feature__item {
   width: 270px;
   margin-right: 30px;
 }
-.feature-list .item:last-child {
+.feature__item:last-child {
   margin-right: 0;
 }
 
-.feature-list .text {
+.feature__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -352,19 +351,11 @@ img {
 }
 
 /* чим ми займаємося */
-.our-classes-section {
+.our-classes {
   padding-top: 0;
 }
 
-.our-classes-container {
-  display: flex;
-  flex-direction: column;
-}
-.our-classes .item{
-  position: relative;
-}
-
-.section-title.our-classes {
+.section-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -373,10 +364,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  background-color: var(--primary-background-color);
+  /* background-color: var(--primary-background-color); */
 }
 
-.our-classes-overlay{
+.our-classes__overlay{
   display: flex;
   position: absolute;
 
@@ -390,7 +381,7 @@ img {
   
 }
 
-.text-our-classes-overlay{
+.our-classes__text-overlay{
   display: flex;
 
   text-align: center;
@@ -408,13 +399,16 @@ img {
 
 
 
-.our-classes-section .item{
+.our-classes__item{
   width: 370px;
+  position: relative;
+  direction: none;
 }
 
-.our-classes.list {
+.our-classes__list {
   display: flex;
   gap: 30px;
+  list-style: none;
 
   background-color: var(--primary-background-color);
 }
